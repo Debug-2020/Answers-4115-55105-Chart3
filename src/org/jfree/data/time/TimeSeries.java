@@ -112,7 +112,7 @@ import org.jfree.data.general.SeriesException;
  * period (for example, {@link Day}) and (b) that each period appears at
  * most one time in the series.
  */
-public class TimeSeries extends Series implements Cloneable, Serializable {
+public class TimeSeries extends Series  implements Cloneable, Serializable {
 
     /** For serialization. */
     private static final long serialVersionUID = -5032960206869675528L;

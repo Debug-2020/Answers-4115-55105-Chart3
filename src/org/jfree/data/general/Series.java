@@ -75,7 +75,7 @@ import org.jfree.chart.util.ObjectUtilities;
  * You can also register a {@link SeriesChangeListener} to receive notification
  * of changes to the series data.
  */
-public abstract class Series implements Cloneable, Serializable {
+public abstract class Series implements Cloneable, Serializable  {
 
     /** For serialization. */
     private static final long serialVersionUID = -6906561437538683581L;
@@ -100,7 +100,7 @@ public abstract class Series implements Cloneable, Serializable {
      *
      * @param key  the series key (<code>null</code> not permitted).
      */
-    protected Series(Comparable key) {
+    public Series(Comparable key) {
         this(key, null);
     }
 
@@ -110,7 +110,7 @@ public abstract class Series implements Cloneable, Serializable {
      * @param key  the series key (<code>null</code> NOT permitted).
      * @param description  the series description (<code>null</code> permitted).
      */
-    protected Series(Comparable key, String description) {
+    public Series(Comparable key, String description) {
         if (key == null) {
             throw new IllegalArgumentException("Null 'key' argument.");
         }
